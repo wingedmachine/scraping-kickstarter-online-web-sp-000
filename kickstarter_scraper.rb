@@ -1,6 +1,8 @@
 require 'nokogiri'
 require 'pry'
 
+html = File.read('fixtures/kickstarter.html')
+
 def create_project_hash
-  doc = Nokigiri::HTML("./fixtures/kickstarter.html")
+  doc = Nokigiri::HTML(html)
 end
